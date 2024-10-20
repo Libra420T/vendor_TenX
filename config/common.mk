@@ -160,7 +160,7 @@ $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(LINEAGE_BUI
 endif
 
 # Bootanimation
-$(call inherit-product, vendor/lineage/config/bootanimation.mk)
+include vendor/lineage/config/bootanimation.mk
 
 # Branding
 $(call inherit-product, vendor/lineage/config/branding.mk)
