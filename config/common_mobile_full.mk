@@ -12,11 +12,6 @@ PRODUCT_PACKAGES += \
     Profiles \
     Recorder 
 
-ifneq ($(PRODUCT_NO_CAMERA),true)
-PRODUCT_PACKAGES += \
-    Aperture
-endif
-
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
     unrar \
