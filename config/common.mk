@@ -314,5 +314,5 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 
 include vendor/lineage/config/version.mk
 
--include vendor/lineage-priv/keys/keys.mk
+include vendor/lineage-priv/keys/keys.mk
 
