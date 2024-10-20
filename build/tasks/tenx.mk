@@ -20,8 +20,8 @@ LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/$(TENX_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
-.PHONY: bacon
-bacon: $(DEFAULT_GOAL) $(INTERNAL_OTA_PACKAGE_TARGET)
+.PHONY: tenx
+tenx: $(DEFAULT_GOAL) $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LINEAGE_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).sha256sum
 	$(hide) rm -rf $(call intermediates-dir-for,PACKAGING,target_files)
